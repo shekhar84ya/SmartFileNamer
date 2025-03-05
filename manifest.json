@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "AI File Renamer",
+  "version": "1.0",
+  "description": "Intelligently rename downloaded files using Gemini AI",
+  "permissions": [
+    "downloads",
+    "storage",
+    "contextMenus",
+    "downloads.open"
+  ],
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icons/icon.svg",
+      "128": "icons/icon.svg"
+    }
+  },
+  "icons": {
+    "48": "icons/icon.svg",
+    "128": "icons/icon.svg"
+  }
+}
